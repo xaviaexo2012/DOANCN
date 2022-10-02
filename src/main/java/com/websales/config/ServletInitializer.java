@@ -1,5 +1,6 @@
-package com.websales;
+package com.websales.config;
 
+import com.websales.WebsalesEcommerceApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
