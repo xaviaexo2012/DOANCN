@@ -5,7 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-
 @Configuration
 public class InterceptorConfig implements WebMvcConfigurer {
     // tim bean SecurityInterceptor
@@ -17,6 +16,7 @@ public class InterceptorConfig implements WebMvcConfigurer {
      * - Path1 : bao gồm url mapping tới trang người dùng
      * -Path2 : bao gồm url mapping tới trang quản trị,
      * **/
+
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(auth)

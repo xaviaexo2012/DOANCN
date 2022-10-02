@@ -1,4 +1,6 @@
 package com.websales.dao;
 
-public interface IOrderDetailDAO {
+import com.websales.entity.OrderDetail;
+
+public interface IOrderDetailDAO extends IGeneralDAO<OrderDetail, Integer>{
 }

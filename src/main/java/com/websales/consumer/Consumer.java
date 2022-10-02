@@ -1,4 +1,4 @@
-package com.websales.config.consumer;
+package com.websales.consumer;
 
 import org.springframework.stereotype.Component;
 
