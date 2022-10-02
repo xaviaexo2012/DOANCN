@@ -5,12 +5,12 @@
   Time: 2:56 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
+<%@ page pageEncoding="utf-8"%>
+<%@ include file="/common/taglib.jsp"%>
 
-</body>
-</html>
+<!-- vùng search -->
+<jsp:include page="_aside-search.jsp" />
+<!-- vùng category -->
+<c:import url="/home/aside/category" />
+<!-- vùng những hàng đặc biệt -->
+<jsp:include page="_aside-hot.jsp" />

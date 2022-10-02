@@ -5,12 +5,11 @@
   Time: 3:03 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+<%@ page pageEncoding="utf-8"%>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0"
+        nonce="pUqLiPKl"></script>
+<div class="fb-comments"
+     data-href="http://localhost:8080/product/detail/${prod.id}"
+     data-numposts="5" data-width="100%"></div>

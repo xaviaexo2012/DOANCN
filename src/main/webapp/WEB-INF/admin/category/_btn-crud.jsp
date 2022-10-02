@@ -5,12 +5,18 @@
   Time: 3:12 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
+<%@ page pageEncoding="utf-8"%>
+<%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c" %>
 
-</body>
-</html>
+<button formaction="/admin/category/create" ${empty category.id ? '' : 'disabled'} class="btn btn-primary">
+    <span class="glyphicon glyphicon-plus"></span> Create
+</button>
+<button formaction="/admin/category/update" ${empty category.id ? 'disabled' : ''} class="btn btn-success">
+    <span class="glyphicon glyphicon-save"></span> Update
+</button>
+<button formaction="/admin/category/delete/${category.id}" ${empty category.id ? 'disabled' : ''} class="btn btn-danger">
+    <span class="glyphicon glyphicon-trash"></span> Delete
+</button>
+<a href="/admin/category/index" class="btn btn-info">
+    <span class="glyphicon glyphicon-refresh"></span> Reset
+</a>

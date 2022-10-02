@@ -5,12 +5,14 @@
   Time: 2:57 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
+<%@ page pageEncoding="utf-8"%>
+<%@ include file="/common/taglib.jsp"%>
 
-</body>
-</html>
+<div class="row">
+    <div class="col-sm-9">
+        <jsp:include page="_header-info.jsp"></jsp:include>
+    </div>
+    <div class="col-sm-3">
+        <c:import url="/header/cart"></c:import>
+    </div>
+</div>
